@@ -40,9 +40,9 @@ function send() {
 			<a name="${item.id}" href="#${item.id}" class="gradient">
 				<img src="${item.img}">
 				<span></span>
-         		<span></span>
-         		<span></span>
-         		<span></span>
+         			<span></span>
+         			<span></span>
+         			<span></span>
 				<p>${item.text}</p>
 			</a>
 			<a href="#" id="boxThree" onclick="deleteItem('.boxThree${i}', '${item.favor}')" class="boxThree${i}">
