@@ -1,0 +1,114 @@
+<!DOCTYPE html> <!-- Тип документа для браузера -->
+<html lang="ru">
+<head> <!-- Вся техническая информация о странице -->
+    <meta charset="UTF-8"> <!-- Кодировка страницы-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Для совместимости с IE-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Для красивого отображения на мобильных устройствах-->
+    <title>Электронная библиотека</title><!--Заголовок страницы-->
+    <script src="https://kit.fontawesome.com/9f57746a1c.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="R.png">
+    <link rel="stylesheet" href="luck.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body> <!-- тело веб-страницы -->
+
+    <header class="sticky"> <!--шапка-->
+
+       
+      <img class="logo" src="Bible_Orange-01.png" height="70px">
+        <!-- Меню гамбургер -->
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+            <nav class="nav"><!--Навигация-->
+               <ul class="menu">
+                  <li><a href="eamaist.github.io/index.html" class="btn-one">Главная</a></li>
+                  <li><a href="eamaist.github.io/catalogue.html" class="btn-one">Каталог</a></li>
+                  <li><a href="eamaist.github.io/favourites.html" class="btn-one">Избранное</a></li>
+                  <li><a href="eamaist.github.io/imlucky.html" class="btn-one">Мне повезет!</a></li>
+                  <li><a href="eamaist.github.io/login.html"><i class="fa-solid fa-user" style="color: #ffffff;"></i></a></li>
+              </ul>
+            </nav>
+    </header>
+
+<main>
+   <section class="content">
+      <section class="book">
+         <img src="card17.jpg" height="700px">
+        <!-- <i class="fa-sharp fa-solid fa-heart" id="favor17" onclick="full('favor17')" style="color: #ffffff;"></i> -->
+      </section>
+
+   <section class="cnt">
+      <h1>Герои Олимпа. Дом Аида</h1>
+      <p> Аннабет Чейз совершила невозможное! Пройдя через множество испытаний, дочь богини мудрости и войны отыскала утраченную реликвию, статую «Афина Парфенос»… но не смогла избежать подлого удара поверженного врага. Аннабет упала в бездну, полную чудовищ, в ужасный Тартар. Перси Джексон разделил это падение вместе с ней. И, даже оказавшись в Тартаре, герои остаются героями! Теперь Перси и Аннабет идут сквозь мрачные земли, полные отчаяния, яда и страха… чтобы найти Врата Смерти и попробовать запечатать их изнутри. А тем временем команда «Арго II» отправляется из Рима в Грецию, навстречу новым приключениям и опасностям. Друзья должны войти в легендарный Дом Аиада и встретиться там с Перси и Аннабет. Ведь только объединив усилия, полубоги сумеют закрыть Врата Смерти и спасти наш мир от бессмертных чудовищ...</p>
+
+      <div class="gallery">
+         <img src="page1.jpg" height="150px" onclick = 'openImageWindow(this.src);' />
+         <img src="page2.jpg" height="150px" onclick = 'openImageWindow(this.src);' />
+      </div>
+   </section>
+
+</section>
+   <div class="login">  
+      <div class="base"> </div>
+      <div class="dropdown-content">
+         <p>Вы не вошли в аккаунт!</p>
+         <a href="eamaist.github.io/login.html"><button class="custom-btn btn-7"><span>Мой аккаунт!</span></button></a>
+          <img src="sumikkogurashi-sumikko.gif" width="200px">
+     </div>
+  </div>
+</main>
+
+</body>
+
+
+<footer><!--Низ сайта-->
+   <div class="contacts">
+      <div class="sec-about">
+         <h2>О нас</h2>
+         <p>Современная библиотека в интернете, которая открывает вам доступ к каталогу бестселлеров и классической литературы, включая новинки разных жанров: от художественных до научно-популярных книг и деловой литературы.</p>
+      </div>
+
+      <div class="sec-contact">
+         <h2>Связь с нами</h2>
+         <ul class="info">
+            <li>
+               <span><i class="fa-solid fa-map-location-dot"></i></span>
+               <span>Москва, Пр-т Вернадского, д. 78</span>
+            </li>
+            <li>
+               <span><i class="fa-solid fa-phone"></i></span>
+               <p>
+                   <a href="tel:+77777777777">+7 777 777-77-77</a><br \>
+                   <a href="tel:+78787878787">+7 878 787-87-87</a>
+               </p>
+            </li>
+            <li>
+               <span><i class="fa-solid fa-envelope"></i></span>
+               <p>
+                  <a href="mailto:ellibr@mail.ru">ellibr@ary.ru</a>
+               </p>
+            </li>
+         </ul>
+      </div>
+      <div class="footer-img">
+       <img src="shourimajo-bubble-kittea.gif" height="240px">
+   </div>
+   </div>
+
+</footer>
+
+<script src="myscript.js"></script> <!--Подключение js-->
+
+
+</html>
+
+
+</html>

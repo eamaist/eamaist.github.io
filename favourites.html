@@ -1,0 +1,78 @@
+<!DOCTYPE html><!--Тип документа для браузера-->
+<html lang="ru"><!--Самый главный тег-->
+<head><!--Вся техническая информация-->
+   <meta charset="UTF-8" ><!--Кодировка страницы-->
+   <meta http-equiv="X-UA-Compaitible" content="IE=edge"><!--Для совместимости с IE-->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Для красивого отображения на мобильных устройствах-->
+   <title>Электронная библиотека</title><!--Заголовок страницы-->
+   <link rel="stylesheet" href="like.css"> <!--Подключение css-->
+   <link rel="icon" href="R.png">
+   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Poppins:wght@500&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/bcd0c2360b.js" crossorigin="anonymous"></script>
+</head>
+<body onload="send()"><!--Тело веб-страницы-->
+   <header class="sticky"> <!--шапка-->
+
+       
+      <img class="logo" src="Bible_Orange-01.png" height="70px">
+      <!-- Меню гамбургер -->
+      <input class="side-menu" type="checkbox" id="side-menu"/>
+          <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+          <nav class="nav"><!--Навигация-->
+            <ul class="menu">
+               <li><a href="eamaist.github.io/index.html" class="btn-one">Главная</a></li>
+               <li><a href="eamaist.github.io/catalogue.html" class="btn-one">Каталог</a></li>
+               <li><a href="eamaist.github.io/favourites.html" class="btn-one">Избранное</a></li>
+               <li><a href="eamaist.github.io/imlucky.html" class="btn-one">Мне повезет!</a></li>
+               <li><a href="eamaist.github.io/login.html"><i class="fa-solid fa-user" style="color: #ffffff;"></i></a></li>
+           </ul>
+          </nav>
+  </header>
+
+   
+   <main>
+    <div class="cards" name="cards">
+        
+    </div>
+   </main>
+
+   <footer><!--Низ сайта-->
+      <div class="contacts">
+         <div class="sec-about">
+            <h2>О нас</h2>
+            <p>Современная библиотека в интернете, которая открывает вам доступ к каталогу бестселлеров и классической литературы, включая новинки разных жанров: от художественных до научно-популярных книг и деловой литературы.</p>
+         </div>
+  
+         <div class="sec-contact">
+            <h2>Связь с нами</h2>
+            <ul class="info">
+               <li>
+                  <span><i class="fa-solid fa-map-location-dot"></i></span>
+                  <span>Москва, Пр-т Вернадского, д. 78</span>
+               </li>
+               <li>
+                  <span><i class="fa-solid fa-phone"></i></span>
+                  <p>
+                      <a href="tel:+77777777777">+7 777 777-77-77</a><br \>
+                      <a href="tel:+78787878787">+7 878 787-87-87</a>
+                  </p>
+               </li>
+               <li>
+                  <span><i class="fa-solid fa-envelope"></i></span>
+                  <p>
+                     <a href="mailto:ellibr@mail.ru">ellibr@ary.ru</a>
+                  </p>
+               </li>
+            </ul>
+         </div>
+         <div class="footer-img">
+          <img src="shourimajo-bubble-kittea.gif" height="240px">
+      </div>
+      </div>
+   </footer>
+
+
+
+   <script src="myscript.js"></script> <!--Подключение js-->
+</body>
+</html>

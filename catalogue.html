@@ -1,0 +1,220 @@
+<!DOCTYPE html><!--Тип документа для браузера-->
+<html lang="ru"><!--Самый главный тег-->
+<head><!--Вся техническая информация-->
+   <meta charset="UTF-8" ><!--Кодировка страницы-->
+   <meta http-equiv="X-UA-Compaitible" content="IE=edge"><!--Для совместимости с IE-->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Для красивого отображения на мобильных устройствах-->
+   <title>Электронная библиотека</title><!--Заголовок страницы-->
+   <link rel="stylesheet" href="all.css"> <!--Подключение css-->
+   <link rel="icon" href="R.png">
+   <script src="https://kit.fontawesome.com/bcd0c2360b.js" crossorigin="anonymous"></script>
+   <link href="https://fonts.googleapis.com/css2?family=Jost:wght@700&family=Poppins:wght@500&display=swap" rel="stylesheet">
+</head>
+<body><!--Тело веб-страницы-->
+   
+    <header class="sticky"> <!--шапка-->
+
+       
+      <img class="logo" src="Bible_Orange-01.png" height="70px">
+        <!-- Меню гамбургер -->
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+            <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+            <nav class="nav"><!--Навигация-->
+               <ul class="menu">
+                  <li><a href="eamaist.github.io/index.html" class="btn-one">Главная</a></li>
+                  <li><a href="eamaist.github.io/catalogue.html" class="btn-one">Каталог</a></li>
+                  <li><a href="eamaist.github.io/favourites.html" class="btn-one">Избранное</a></li>
+                  <li><a href="eamaist.github.io/imlucky.html" class="btn-one">Мне повезет!</a></li>
+                  <li><a href="eamaist.github.io/login.html"><i class="fa-solid fa-user" style="color: #ffffff;"></i></a></li>
+              </ul>
+            </nav>
+    </header>
+
+   <main>
+      <div class="d1">
+         <form> 
+            <input class="place_for_search" type="text" id="text-to-find" value="" placeholder="Поиск по странице" autofocus> 
+            <button class="button_for_search" type="submit" onclick="javascript: FindOnPage('text-to-find',true); return false;" value=" " title="Поиск..."></button>
+         </form>
+      </div>
+
+
+      <div class="cards" name="cards">
+         <a name="book1" href="#book1"  class="gradient">
+            <i class="fa-sharp fa-solid fa-heart" id="favor1" onclick="full('favor1')" style="color: #ffffff;"></i>
+            <img src="card1.jpg">
+            <p>"Пламя и кровь. Пляска смерти" Джордж Р. Р. Мартин</p>
+         </a>
+
+
+         <a name="book2" href="#book2"  class="gradient">
+            <i class="fa-sharp fa-solid fa-heart" id="favor2" onclick="full('favor2')" style="color: #ffffff;"></i>
+            <img src="card2.jpg">
+            <p>"Щегол" Донна Тартт</p>
+         </a>
+
+
+         <a name="book3" href="#book3"  class="gradient">
+            <i class="fa-sharp fa-solid fa-heart" id="favor3" onclick="full('favor3')" style="color: #ffffff;"></i>
+            <img src="card3.jpg">
+            <p>"Над пропастью во ржи" Джером Сэлинджер</p>
+         </a>
+
+         <a name="book4" href="#book4"  class="gradient">
+            <i class="fa-sharp fa-solid fa-heart" id="favor4" onclick="full('favor4')" style="color: #ffffff;"></i>
+            <img src="card4.jpg">
+            <p>"Братья Карамазовы" Федор Достоевский</p>
+         </a>
+
+
+         <a name="book5" href="#book5"  class="gradient">
+            <i class="fa-sharp fa-solid fa-heart" id="favor5" onclick="full('favor5')" style="color: #ffffff;"></i>
+            <img src="card5.jpg">
+            <p>"Гарри Поттер и Дары Смерти" Джоан К. Роулинг</p>
+         </a>
+
+         <a name="book6" href="#book6" id="detective" class="gradient">
+            <i class="fa-sharp fa-solid fa-heart" id="favor6" onclick="full('favor6')" style="color: #ffffff;"></i>
+            <img src="card6.jpg">
+            <p>"Мертвые души. Ревизор. Женитьба. Игроки" Николай Гоголь</p>
+         </a>
+
+         <a name="book7" href="#book7" id="detective" class="gradient">
+            <i class="fa-sharp fa-solid fa-heart" id="favor7" onclick="full('favor7')" style="color: #ffffff;"></i>
+            <img src="card7.jpg">
+            <p>"Зов бездны" Орфей де&nbspРосс</p>
+         </a>
+
+         <a name="book8" href="#book8"  class="gradient">
+            <i class="fa-sharp fa-solid fa-heart" id="favor8" onclick="full('favor8')" style="color: #ffffff;"></i>
+            <img src="card8.jpg">
+            <p>"О, как убийственно мы любим..." Ф. И. Тютчев</p>
+         </a>
+
+         
+         <a name="book9" href="#book9"  class="gradient">
+            <i class="fa-sharp fa-solid fa-heart" id="favor9" onclick="full('favor9')" style="color: #ffffff;"></i>
+            <img src="card9.jpg">
+            <p>"Цветы для Элджернона" Дэниел Киз</p>
+         </a>
+
+         <a name="book10" href="#book10"  class="gradient">
+            <i class="fa-sharp fa-solid fa-heart" id="favor10" onclick="full('favor10')" style="color: #ffffff;"></i>
+            <img src="card10.jpg">
+            <p>"Три мушкетера" Александр Дюма</p>
+         </a>
+
+         <a name="book11" href="#book11" id="detective" class="gradient">
+            <i class="fa-sharp fa-solid fa-heart" id="favor11" onclick="full('favor11')" style="color: #ffffff;"></i>
+            <img src="card11.jpg">
+            <p>"Трое в лодке, не считая собаки" Джером К. Джером</p>
+         </a>
+
+         <a name="book12" href="#book12" id="roman" class="gradient">
+            <i class="fa-sharp fa-solid fa-heart" id="favor312" onclick="full('favor12')" style="color: #ffffff;"></i>
+            
+            <img src="card12.jpg">
+            <p>"Перси Джексон и похититель молний" Рик Риордан</p>
+         </a>
+         <a name="book13" href="#book13"  class="gradient">
+            <i class="fa-sharp fa-solid fa-heart" id="favor13" onclick="full('favor13')" style="color: #ffffff;"></i>
+            
+            <img src="card13.jpg">
+            <p>"Атака Титанов" Хадзиме Исаяма</p>
+         </a>
+         <a name="book14" href="#book14"  class="gradient">
+            <i class="fa-sharp fa-solid fa-heart" id="favor14" onclick="full('favor14')" style="color: #ffffff;"></i>
+            
+            <img src="card14.jpg">
+            <p>"Хоббит" Дж. Р. Р. Толкин</p>
+         </a>
+
+         <a name="book15" href="#book15"  class="gradient">
+            <i class="fa-sharp fa-solid fa-heart" id="favor15" onclick="full('favor15')" style="color: #ffffff;"></i>
+            <img src="card15.jpg">
+            <p>"1984", "Скотный двор" Дж. Оруэлл</p>
+         </a>
+
+         <a name="book16" href="#book16" id="roman" class="gradient">
+            <i class="fa-sharp fa-solid fa-heart" id="favor16" onclick="full('favor16')" style="color: #ffffff;"></i>
+            <img src="card16.jpg">
+            <p>"Портрет Дориана Грея" Оскар Уайльд</p>
+         </a>
+
+         <a name="book17" href="#book17"  class="gradient">
+            <i class="fa-sharp fa-solid fa-heart" id="favor17" onclick="full('favor17')" style="color: #ffffff;"></i>
+            <img src="card17.jpg">
+            <p>"Герои Олимпа. Дом Аида" Рик Риордан</p>
+         </a>
+
+         <a name="book18" href="#book18" id="roman" class="gradient">
+            <i class="fa-sharp fa-solid fa-heart" id="favor18" onclick="full('favor18')" style="color: #ffffff;"></i>
+            <img src="card18.jpg">
+            <p>"Зов Ктулху" Говард Филлипс Лавкрафт</p>
+         </a>
+
+         <a name="book19" href="#book19"  class="gradient">
+            <i class="fa-sharp fa-solid fa-heart" id="favor19" onclick="full('favor19')" style="color: #ffffff;"></i>
+            <img src="card19.jpg">
+            <p>"Выдающиеся звери" Пару Итагаки</p>
+         </a>
+
+         <a name="book20" href="#book20"  class="gradient">
+            <i class="fa-sharp fa-solid fa-heart" id="favor20" onclick="full('favor20')" style="color: #ffffff;"></i>
+            <img src="card20.jpg">
+            <p>"Оно" Стивен Кинг</p>
+         </a>
+
+      </div>
+
+      <div class="login">  
+         <div class="base"> </div>
+         <div class="dropdown-content">
+            <p>Вы не вошли в аккаунт!</p>
+            <a href="eamaist.github.io/login.html"><button class="custom-btn btn-7"><span>Мой аккаунт!</span></button></a>
+             <img src="sumikkogurashi-sumikko.gif" width="200px">
+        </div>
+     </div>
+
+   </main>
+
+   <footer><!--Низ сайта-->
+    <div class="contacts">
+       <div class="sec-about">
+          <h2>О нас</h2>
+          <p>Современная библиотека в интернете, которая открывает вам доступ к каталогу бестселлеров и классической литературы, включая новинки разных жанров: от художественных до научно-популярных книг и деловой литературы.</p>
+       </div>
+
+       <div class="sec-contact">
+          <h2>Связь с нами</h2>
+          <ul class="info">
+             <li>
+                <span><i class="fa-solid fa-map-location-dot"></i></span>
+                <span>Москва, Пр-т Вернадского, д. 78</span>
+             </li>
+             <li>
+                <span><i class="fa-solid fa-phone"></i></span>
+                <p>
+                    <a href="tel:+77777777777">+7 777 777-77-77</a><br \>
+                    <a href="tel:+78787878787">+7 878 787-87-87</a>
+                </p>
+             </li>
+             <li>
+                <span><i class="fa-solid fa-envelope"></i></span>
+                <p>
+                   <a href="mailto:ellibr@mail.ru">ellibr@ary.ru</a>
+                </p>
+             </li>
+          </ul>
+       </div>
+       <div class="footer-img">
+        <img src="shourimajo-bubble-kittea.gif" height="240px">
+    </div>
+    </div>
+
+ </footer>
+
+ <script src="all.js"></script> <!--Подключение js-->
+ <script src="myscript.js"></script> <!--Подключение js-->
+</body>
+</html>
