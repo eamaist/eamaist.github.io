@@ -156,8 +156,7 @@ function FindOnPage(name, status) {
 		}
 	}
 	function FindOnPageBack() { document.body.innerHTML = locale_HTML; }
-	if(status) { FindOnPageBack(); FindOnPageGo(); } //чистим прошлое и Выделяем найденное
-	if(!status) { FindOnPageBack(); } //Снимаем выделение
+
 }
 
 
