@@ -1,24 +1,3 @@
-var findNow = false;
-function finden(genre){
-	var findenBooks = document.getElementsByClassName('gradient');
-	if (findNow){
-		for (var i=0; i < findenBooks.length;i++){
-			findenBooks[i].style.boxShadow = '0 0 0 0 rgba(154, 141, 137, 0.2)';
-		}
-		findNow = false;
-		return;
-	}
-	for (var i=0; i < findenBooks.length;i++){
-		if (findenBooks[i].id == genre){
-			findenBooks[i].style.boxShadow = '4px 4px 13px 21px rgba(222, 216, 214, 1)';
-		}
-	}
-	findNow = true;
-}
-
-
-
-
 function deleteItem(item, favorId){
 	var bookItem = document.querySelector(item);
 	var bookCart = bookItem.closest('div');
